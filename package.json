@@ -1,11 +1,11 @@
 {
 	"name": "rapidnodeinit",
-	"version": "1.0.0",
+	"version": "1.0.8",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"start": "node app.js",
-		"postinstall": "cp -r ./node_modules/rapidnodeinit/Database ./backend; cp -r ./node_modules/rapidnodeinit/Server ./backend; cp -r ./node_modules/rapidnodeinit/app.js ./backend"
+		"postinstall": "pwd; mkdir ../../backend; cp -r ./Database ../../backend && echo 'Database copied'; cp -r ./Server ../../backend && echo 'Server copied'; cp -r ./app.js ../../backend && echo 'app.js copied'; echo 'Postinstall script completed'"
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
@@ -13,7 +13,8 @@
 		"express": "^4.18.2",
 		"jsonwebtoken": "^9.0.2",
 		"mongodb": "^4.17.1",
-		"mongoose": "^6.8.3"
+		"mongoose": "^6.8.3",
+		"ncp": "^2.0.0"
 	},
 	"author": "",
 	"license": "ISC"
