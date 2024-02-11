@@ -17,3 +17,34 @@ RapidNodeInit is a lightweight and fast Node.js backend starter kit that provide
 Make sure you have Node.js and npm installed on your machine.
 
 ### Installation
+
+To kickstart your backend development with RapidNodeInit, follow these steps:
+
+1. Open your terminal and run the following command to install RapidNodeInit globally:
+
+   ```bash
+   npm i -g rapidnodeinit 
+
+   This will create the backend folder structure for your project.
+
+2. After installation, navigate into the generated 'backend' directory:
+   ```bash
+   cd backend
+3. Create a `.env` file in the 'backend' directory with the following content:
+    ```env
+    PORT_NUM=<your desired port number>
+    MONGODB_CONNECTION_STRING=<your MongoDB connection string>
+    JWT_SECRET_KEY=<your JWT secret key>
+
+    Make sure to replace `<your desired port number>`, `<your MongoDB connection string>`, and `<your JWT secret key>` with your actual preferences.
+
+4. Additionally, it is advisable to create a `.gitignore` file in the 'backend' directory with the following content:
+    ```plaintext
+    node_modules
+    .env
+    *.DS_Store
+    package-lock.json
+    
+    This will ensure that sensitive information and unnecessary files are excluded from version control.
+
+Now, you're all set! You can start building your application on top of this lightweight and fast Node.js backend foundation.
