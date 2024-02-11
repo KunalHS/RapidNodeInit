@@ -25,7 +25,7 @@ To kickstart your backend development with RapidNodeInit, follow these steps:
    ```bash
    npm i -g rapidnodeinit 
 
-   This will create the backend folder structure for your project.
+This will create the backend folder structure for your project.
 
 2. After installation, navigate into the generated 'backend' directory:
    ```bash
@@ -36,7 +36,7 @@ To kickstart your backend development with RapidNodeInit, follow these steps:
     MONGODB_CONNECTION_STRING=<your MongoDB connection string>
     JWT_SECRET_KEY=<your JWT secret key>
 
-    Make sure to replace `<your desired port number>`, `<your MongoDB connection string>`, and `<your JWT secret key>` with your actual preferences.
+Make sure to replace `<your desired port number>`, `<your MongoDB connection string>`, and `<your JWT secret key>` with your actual preferences.
 
 4. Additionally, it is advisable to create a `.gitignore` file in the 'backend' directory with the following content:
     ```plaintext
@@ -45,6 +45,6 @@ To kickstart your backend development with RapidNodeInit, follow these steps:
     *.DS_Store
     package-lock.json
     
-    This will ensure that sensitive information and unnecessary files are excluded from version control.
+This will ensure that sensitive information and unnecessary files are excluded from version control.
 
 Now, you're all set! You can start building your application on top of this lightweight and fast Node.js backend foundation.
