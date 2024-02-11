@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "node app.js"
+		"start": "node app.js",
+		"postinstall": "cp -r ./node_modules/rapidnodeinit/Database ./backend; cp -r ./node_modules/rapidnodeinit/Server ./backend; cp -r ./node_modules/rapidnodeinit/app.js ./backend"
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
