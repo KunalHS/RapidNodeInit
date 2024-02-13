@@ -23,13 +23,16 @@ To kickstart your backend development with RapidNodeInit, follow these steps:
 1. Open your terminal and run the following command to install RapidNodeInit globally:
 
    ```bash
-   npm i -g rapidnodeinit 
+   npm i rapidnodeinit 
 
 This will create the backend folder structure for your project.
 
-2. After installation, navigate into the generated 'backend' directory:
+2. After installation, just run the following command:
    ```bash
-   cd backend
+   npx rapidnode init
+* If you want to add the files in a custom folder just add the folder path in the argument of the above command. For example: 
+    ```bash
+    npx rapidnode init exampleFolder
 3. Create a `.env` file in the 'backend' directory with the following content:
     ```env
     PORT_NUM=<your desired port number>

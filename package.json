@@ -1,11 +1,14 @@
 {
 	"name": "rapidnodeinit",
-	"version": "1.0.10",
+	"version": "1.0.12",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"start": "node app.js",
-		"postinstall": "mkdir ../../backend; cp -r ./Database ../../backend && echo 'Database copied'; cp -r ./Server ../../backend && echo 'Server copied'; cp -r ./app.js ../../backend && echo 'app.js copied'; echo 'Postinstall script completed'"
+		"init": "node setup.js"
+	},
+	"bin": {
+		"rapidnode": "setup.js"
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
@@ -14,7 +17,8 @@
 		"jsonwebtoken": "^9.0.2",
 		"mongodb": "^4.17.1",
 		"mongoose": "^6.8.3",
-		"ncp": "^2.0.0"
+		"ncp": "^2.0.0",
+		"yargs": "^17.7.2"
 	},
 	"author": "",
 	"license": "ISC"
